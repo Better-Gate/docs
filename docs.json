@@ -91,14 +91,14 @@
     }
   },
   "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
+    "light": "/images/MacBookAir-8.png",
+    "dark": "/images/MacBookAir-7.png"
   },
   "navbar": {
     "links": [
       {
         "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "href": "mailto:support@better-gate.com"
       }
     ],
     "primary": {
@@ -122,7 +122,7 @@
   "footer": {
     "socials": {
       "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
+      "github": "https://github.com",
       "linkedin": "https://linkedin.com/company/mintlify"
     }
   }
