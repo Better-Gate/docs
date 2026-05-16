@@ -1,7 +1,7 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Better Gate Docs",
+  "name": "Better Gate 文档中心",
   "colors": {
     "primary": "#16A34A",
     "light": "#07C983",
@@ -128,5 +128,12 @@
   },
   "appearance": {
     "default": "system"
-  }
+  },
+  "thumbnails": {
+    "appearance": "dark"
+  },
+  "seo": {
+    "indexing": "all"
+  },
+  "description": "Better Gate 是面向开发者与企业的统一 AI Gateway 平台。通过兼容 OpenAI API 的标准接口，集中接入 OpenAI、Claude、Gemini 等模型服务，实现统一鉴权、智能路由、成本控制、团队协作与用量监控。"
 }
