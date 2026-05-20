@@ -1,133 +1,181 @@
 ---
 title: "Introduction"
 description: "Welcome to the new home for your documentation"
-icon: 'star'
+icon: "star"
 ---
 
-## Setting up
+这篇文档适合第一次使用 Better Gate 的用户。目标是让你从注册账号开始，一步一步创建 API Key，并完成第一次调用。
 
-Get your documentation site up and running in minutes.
+Better Gate 是什么
 
-<Card
-  title="Start here"
-  icon="rocket"
-  href="/quickstart"
-  horizontal
->
-  Follow our three step quickstart guide.
-</Card>
+Better Gate 是一个 AI API 网关。它帮你统一管理模型访问、API Key、渠道分组、用量日志、预算、充值和发票。
 
-## Make it yours
+你可以把它理解成 AI 模型调用的控制台。你的应用不需要直接管理多个模型服务商，只需要接入 Better Gate，由 Better Gate 负责路由请求、统计费用和记录日志。
 
-Design a docs site that looks great and empowers your users.
+开始前你需要准备什么
 
-<Columns cols={2}>
-  <Card
-    title="Edit locally"
-    icon="pen-to-square"
-    href="/development"
-  >
-    Edit your docs locally and preview them in real time.
-  </Card>
-  <Card
-    title="Customize your site"
-    icon="palette"
-    href="/essentials/settings"
-  >
-    Customize the design and colors of your site to match your brand.
-  </Card>
-    <Card
-    title="Set up navigation"
-    icon="map"
-    href="/essentials/navigation"
-  >
-    Organize your docs to help users find what they need and succeed with your product.
-  </Card>
-  <Card
-    title="API documentation"
-    icon="terminal"
-    href="/api-reference/introduction"
-  >
-    Auto-generate API documentation from OpenAPI specifications.
-  </Card>
-</Columns>
+一个可接收邮件的邮箱。
 
-## Create beautiful pages
+一个需要接入 AI 模型的项目、工具或开发环境。
 
-Everything you need to create world-class documentation.
+如果要付费使用，需要准备可用的支付方式。
 
-<Columns cols={2}>
-  <Card
-    title="Write with MDX"
-    icon="pen-fancy"
-    href="/essentials/markdown"
-  >
-    Use MDX to style your docs pages.
-  </Card>
-  <Card
-    title="Code samples"
-    icon="code"
-    href="/essentials/code"
-  >
-    Add sample code to demonstrate how to use your product.
-  </Card>
-  <Card
-    title="Images"
-    icon="image"
-    href="/essentials/images"
-  >
-    Display images and other media.
-  </Card>
-  <Card
-    title="Reusable snippets"
-    icon="recycle"
-    href="/essentials/reusable-snippets"
-  >
-    Write once and reuse across your docs.
-  </Card>
-</Columns>
+如果你是团队成员，需要管理员发送的组织邀请链接。
 
-## Make your content agent ready
+第 1 步：注册账号
 
-Make your docs work for humans and AI agents alike.
+打开 Better Gate 应用。
 
-<Columns cols={2}>
-  <Card
-    title="Prompt component"
-    icon="robot"
-    href="/agent-ready/prompt"
-  >
-    Embed shareable AI prompts readers can copy or open in Cursor.
-  </Card>
-  <Card
-    title="Visibility"
-    icon="eye"
-    href="/agent-ready/visibility"
-  >
-    Show different content to humans and agents reading your docs.
-  </Card>
-  <Card
-    title="Contextual menu"
-    icon="bolt"
-    href="/agent-ready/contextual"
-  >
-    Give readers one-click access to Claude, ChatGPT, Cursor, and more.
-  </Card>
-  <Card
-    title="AI coding tools"
-    icon="wand-magic-sparkles"
-    href="/ai-tools/claude-code"
-  >
-    Set up Claude Code, Cursor, or Windsurf with Mintlify's skill.
-  </Card>
-</Columns>
+点击注册入口。
 
-## Need inspiration?
+输入邮箱并完成注册。
 
-<Card
-  title="See complete examples"
-  icon="stars"
-  href="https://mintlify.com/customers"
->
-  Browse our showcase of exceptional documentation sites.
-</Card>
+注册后系统会发送验证邮件。请打开邮箱，点击验证链接。
+
+如果没有收到邮件，先检查垃圾邮件、广告邮件或邮件拦截规则。页面上也会提供重新发送按钮，通常需要等待倒计时结束后才能再次发送。
+
+第 2 步：进入个人工作区
+
+注册并验证邮箱后，你会进入默认的个人工作区。
+
+个人工作区适合自己使用。你可以在这里充值、创建 API Key、接入自己的项目，并查看自己的用量和账单。
+
+如果你只是个人开发或测试，直接使用个人工作区即可。
+
+第 3 步：确认是否需要团队协作
+
+如果你只是自己用，继续留在个人工作区。
+
+如果你要和团队一起使用，从左上角工作区切换器进入组织相关操作。
+
+你可以创建组织，也可以加入已有组织。
+
+创建组织适合团队管理员。
+
+加入已有组织适合被团队邀请的成员。
+
+加入组织后，你的个人工作区仍然保留。你可以随时从左上角工作区切换器切回个人工作区。
+
+第 4 步：准备可用额度
+
+如果你在个人工作区使用，需要先充值。
+
+如果你在组织工作区使用，通常由组织管理员充值，并给成员分配预算。
+
+如果你是组织成员，但发现不能正常请求，请先确认管理员是否已经给你分配成员预算。
+
+第 5 步：创建 API Key
+
+进入你要使用的工作区。
+
+打开 API Key 页面。
+
+点击创建 API Key。
+
+填写 Key 名称。建议写清楚用途，例如“官网客服机器人”“测试环境”“Claude Code 项目”。
+
+选择渠道分组。新手可以先选择默认推荐分组；团队成员应使用管理员指定的分组。
+
+其他高级设置可以先保持默认。
+
+创建后请复制 API Key。出于安全原因，完整 Key 通常只会显示一次。
+
+第 6 步：接入你的应用
+
+在你的应用、脚本、开发工具或 Coding Agent 中配置 Better Gate 的 Base URL 和 API Key。
+
+Base URL 以页面展示为准，请从产品页面复制。
+
+API Key 使用你刚刚创建的 Key。
+
+如果你的工具支持 OpenAI 兼容接口，通常只需要替换 Base URL 和 API Key。
+
+第 7 步：发送一次测试请求
+
+先用一个小请求测试是否接通。
+
+不要一开始就跑大批量任务。
+
+测试请求成功后，回到 Better Gate 查看用量日志。
+
+如果日志里出现了这条请求，说明应用已经通过 Better Gate 调用了模型。
+
+第 8 步：查看用量和费用
+
+打开用量或日志页面。
+
+查看请求状态、模型名称、消耗金额、Token 数量、API Key 和错误信息。
+
+如果请求失败，优先看错误代码和错误说明。
+
+如果日志里完全没有请求记录，说明请求可能没有到达 Better Gate，需要检查 Base URL、API Key 或网络配置。
+
+第一次使用检查清单
+
+邮箱已经验证。
+
+当前工作区选择正确。
+
+个人余额或组织成员预算可用。
+
+API Key 已创建。
+
+应用中已填写正确 Base URL。
+
+应用中已填写正确 API Key。
+
+测试请求能在用量日志中看到。
+
+个人用户推荐流程
+
+注册账号。
+
+验证邮箱。
+
+进入个人工作区。
+
+充值。
+
+创建 API Key。
+
+接入应用。
+
+发送测试请求。
+
+查看用量日志。
+
+需要报销时申请发票。
+
+团队成员推荐流程
+
+使用被邀请邮箱登录。
+
+打开组织邀请链接。
+
+加入组织。
+
+从左上角切换到组织工作区。
+
+确认成员预算可用。
+
+创建组织 API Key。
+
+接入应用。
+
+查看自己的用量。
+
+团队管理员推荐流程
+
+注册账号。
+
+创建组织。
+
+组织充值。
+
+邀请成员。
+
+分配成员预算。
+
+确认成员可以创建 Key。
+
+查看组织用量和成员日志。
